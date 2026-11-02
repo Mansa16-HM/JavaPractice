@@ -1,0 +1,10 @@
+class TestDemo
+{
+public static void main(String args[])
+{
+for(String x:args){
+ double sum=0;
+sum=sum+Double.parseDouble();
+SYstem.out.println(sum);
+}
+}}

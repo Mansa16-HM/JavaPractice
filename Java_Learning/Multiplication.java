@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Multiplication {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter number: ");
+        int num = sc.nextInt();
+
+        System.out.print("Enter start: ");
+        int start = sc.nextInt();
+
+        System.out.print("Enter stop: ");
+        int stop = sc.nextInt();
+
+        System.out.println("Using For Loop");
+
+        for (int i = start; i <= stop; i++) {
+            System.out.println(num + " x " + i + " = " + (num * i));
+        }
+
+        System.out.println("Using While Loop");
+
+        int i = start;
+
+        while (i <= stop) {
+            System.out.println(num + " x " + i + " = " + (num * i));
+            i++;
+        }
+
+        System.out.println("Using Do-While Loop");
+
+        i = start;
+
+        do {
+            System.out.println(num + " x " + i + " = " + (num * i));
+            i++;
+        } while (i <= stop);
+    }
+}
